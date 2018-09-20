@@ -1,0 +1,5 @@
+netsh
+wlan
+set hostednetwork mode=allow ssid=anyname
+set hostednetwork key=password keyusage=persistent
+start hostednetwork
