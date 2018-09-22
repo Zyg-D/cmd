@@ -1,3 +1,6 @@
+Sitaip padaromas AP ant laptopo, per kuri sharinamas internetas.
+Bet problema buvo, kad pasharinu, pasijungiu, bet interneto nera.
+
 netsh
 wlan
 set hostednetwork mode=allow ssid=anyname
