@@ -1,0 +1,13 @@
+Sets Dynamic IP addresses for a specified Ethernet name:
+
+netsh interface ipv4 set address name="Ethernet 2" source=dhcp
+netsh interface ipv4 set dnsservers name="Ethernet 2" source=dhcp
+pause
+
+Sets explicit IP addresses for a specified Ethernet name (visi list'inti adresai eina is eiles in UI):
+
+netsh interface ipv4 set address name="Ethernet 2" static 158.129.156.199 255.255.255.0 158.129.156.1 store=persistent
+netsh interface ipv4 set dnsservers name="Ethernet 2" source=static address="158.129.159.31" validate=no
+netsh interface ipv4 add dnsservers name="Ethernet 2" address="158.129.159.33" validate=no index=2
+pause
+
